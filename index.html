@@ -1481,7 +1481,7 @@ var array4 = [["tempestas", "tempestatis","f","storm","storms"], ["hiems", "hiem
 
 var array5 = [["annus", "anni","m","year","years"], ["mensis", "mensis","m", "months", "months"]]; 
 var array6 = [["tempestas", "tempestatis","f","storm","storms"], ["hiems", "hiemis","f","winter","winters"],["bellum", "belli", "n", "war", "wars"],["ruina", "ruinae", "f", "ruin", "ruins"]]; 
-var array7 = [["regina", "reginae","f","queen","queens"], ["paedagogus", "paedagogi","m","tutor","tutors"],["discipulus", "discipulī","m","student","students"]];
+var array7 = [["regina", "reginae","f","queen","queens"], ["paedagogus", "paedagogi","m","tutor","tutors"],["discipulus", "discipuli","m","student","students"]];
 var array8 = [["grammaticus", "grammatici","m","grammar teacher","grammar teachers"],["magister", "magistri","m","teacher","teachers"]];
 
 var array9 = [["regina", "reginae","f","queen","queens"], ["paedagogus", "paedagogi","m","tutor","tutors"],["discipulus", "discipuli","m","student","students"],["comes","comitis","m", "comrade", "comrades"]];
@@ -1730,9 +1730,11 @@ const quizData = [
     },
     {
         question: "What is the genitive singular of " + "\""  + ranNoun5.nominativeSing + "\"(" + ranNoun5.nominativeSingTrans + ")?",
-        options: [ranNoun5.nominativeSing, ranNoun5.accusativePl, ranNoun5.ablativeSing, ranNoun5.dativePl],
+        options: [ranNoun5.genitivePl, ranNoun5.accusativePl, ranNoun5.ablativeSing, ranNoun5.genitiveSing],
         answer: ranNoun5.genitiveSing
     },
+
+  
      {
         question: "What is the accusative plural of " + "\""  + ranNoun4.nominativeSing + "\"(" + ranNoun4.nominativeSingTrans + ")?",
         options: [ranNoun4.dativePl, ranNoun4.genitivePl, ranNoun4.accusativePl, ranNoun4.accusativeSing],
